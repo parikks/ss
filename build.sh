@@ -11,7 +11,7 @@ timeStart
 export BUILD_USERNAME=parikk
 export BUILD_HOSTNAME=parikk-build
 export EVO_BUILD_TYPE=OFFICIAL
-lunch evolution_lmi-userdebug
+lunch evolution_m20lte-userdebug
 mkfifo reading # Jangan di Hapus
 tee "${BUILDLOG}" < reading & # Jangan di Hapus
 build_message "Building Started" # Jangan di Hapus
