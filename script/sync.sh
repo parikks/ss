@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 set -exv
-name_rom=$(grep init $CIRRUS_WORKING_DIR/build.sh -m 1 | cut -d / -f 4)
+name_rom=AOSPA
 mkdir -p $WORKDIR/rom/$name_rom
 cd $WORKDIR/rom/$name_rom
 command=$(head $CIRRUS_WORKING_DIR/build.sh -n $(expr $(grep '# build rom' $CIRRUS_WORKING_DIR/build.sh -n | cut -f1 -d:) - 1))
