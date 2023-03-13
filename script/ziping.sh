@@ -36,6 +36,7 @@ rm -rf $engzip $otazip $awaken $octavi $p404 $cipher
 file_name=$(basename *.zip)
 DL_LINK=https://gdrive.parikk.workers.dev/$name_rom/$device/$file_name
 rclone copy aospa*-image.zip drive:AOSPA/lmi -P
+rclone copy *.zip drive:AOSPA/lmi -P
 cd $WORKDIR/rom/$name_rom/out/target/product/$device
 echo -e \
 "

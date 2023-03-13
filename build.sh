@@ -1,5 +1,5 @@
 # sync rom
-repo init --depth=1 --no-repo-verify -u https://github.com/aospa-alioth/manifest -b topaz
+repo init --depth=1 --no-repo-verify -u https://github.com/AOSPA/manifest -b topaz
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j16
 
 # build rom
